@@ -18,21 +18,20 @@ export default class BootScene extends Phaser.Scene {
             progress.destroy();
             this.scene.start('GameScene');
         }, this);
-        this.load.image('block', 'assets/images/block.png');
+        this.load.image('Background', 'assets/images/Background.png');
+        this.load.image('Cloud_1', 'assets/images/Cloud_1.png');
+        this.load.image('Cloud_2', 'assets/images/Cloud_2.png');
+        this.load.image('Hills_1', 'assets/images/Hills_1.png');
+        this.load.image('Hills_2', 'assets/images/Hills_2.png');
+        this.load.image('Mountain_1', 'assets/images/Mountain_1.png');
+        this.load.image('Mountain_2', 'assets/images/Mountain_2.png');
+        this.load.image('Mountain_3', 'assets/images/Mountain_3.png');
+        this.load.image('Mountain_4', 'assets/images/Mountain_4.png');
+        this.load.image('Sky', 'assets/images/Sky.png');
+        this.load.image('Spike_Down', 'assets/images/Spike_Down.png');
+        this.load.image('Spike_Left&Right', 'assets/images/Spike_Left&Right.png');
+        this.load.image('Spike_Up', 'assets/images/Spike_Up.png');
 
-        this.load.atlas('assets', 'assets/images/assets.png', 'assets/images/assets.json');
-
-        // new ones
-        // large one
-        this.load.image('bg', 'assets/images/large/bg.png');
-        this.load.image('planet_front', 'assets/images/large/planet_front.png');
-        this.load.image('bg_death', 'assets/images/large/bg_death.png');
-        this.load.image('earth', 'assets/images/large/earth.png');
-        this.load.image('core', 'assets/images/large/core.png');
-        this.load.image('core_no_color', 'assets/images/large/core_no_colors.png');
-        this.load.image('clouds_2a', 'assets/images/large/clouds_2a.png');
-        this.load.image('clouds_2b', 'assets/images/large/clouds_2b.png');
-
-        this.load.atlas('assets2', 'assets/images/assets2.png', 'assets/images/assets2.json');
+        // this.load.atlas('assets2', 'assets/images/assets2.png', 'assets/images/assets2.json');
     }
 }

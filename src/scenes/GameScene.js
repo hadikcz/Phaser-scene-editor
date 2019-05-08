@@ -11,6 +11,8 @@ export default class GameScene extends Phaser.Scene {
     create () {
         window.gameScene = this;
 
+        this.physics.world.setBounds(0, 0, 5000, 5000);
+
         this.sceneEditor = new SceneEditor(this);
     }
 

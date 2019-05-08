@@ -26,6 +26,16 @@ export default class UI {
             self.sceneEditor.events.emit(Events.SelectNewTexture, textureKey);
         });
 
+        $('#cameraZoom').change(function() {
+           let zoom = this.value;
+           $('#zoomValue').html(zoom * 100);
+           self.scene.cameras.main.setZoom(zoom);
+        });
+
+        $('#remove').click(() => {
+           self.sceneEditor.events.emit(Events.RemoveSelected);
+        });
+
         this._init();
     }
 

@@ -29,6 +29,6 @@ export default class CameraController {
     }
 
     update () {
-        this.controls.update();
+        this.controls.update(5);
     }
 }

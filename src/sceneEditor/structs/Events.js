@@ -1,4 +1,5 @@
 export default {
     SelectNewTexture: 'SelectNewTexture',
-    SelectPlacedTexture: 'SelectPlacedTexture'
+    SelectPlacedTexture: 'SelectPlacedTexture',
+    RemoveSelected: 'RemoveSelected'
 };
