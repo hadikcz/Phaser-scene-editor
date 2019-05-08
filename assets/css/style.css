@@ -1,0 +1,49 @@
+html,
+body {
+    color: #ffe33e;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    image-rendering: optimizeSpeed;              /* Older versions of FF */
+    image-rendering: -moz-crisp-edges;           /* FF 6.0+ */
+    image-rendering: -webkit-optimize-contrast;  /* Webkit (non standard naming) */
+    image-rendering: -o-crisp-edges;             /* OS X & Windows Opera (12.02+) */
+    image-rendering: crisp-edges;                /* Possible future browsers. */
+    -ms-interpolation-mode: nearest-neighbor;    /* IE (non standard naming) */
+    image-rendering: pixelated;                  /* Chrome 41 */
+    font-family: Arial;
+    background: #7599bb;
+}
+#content {
+    position: absolute;
+    z-index: 0;
+}
+
+.sceneEditorWrapper {
+    position: absolute;
+    z-index: 50000;
+    top: 0;
+    left: 0;
+}
+
+.sceneEditorWrapper .imagesList {
+    width: 150px;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.82);
+    overflow-y: scroll;
+}
+
+.sceneEditorWrapper .imagesList .imageRow {
+    max-height: 140px;
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+.sceneEditorWrapper .imagesList .imageRow img {
+    max-width: 120px;
+    max-height: 120px;
+}
+.sceneEditorWrapper .imagesList .imageRow .title {
+    color: white;
+    font-size: 12px;
+}
+
